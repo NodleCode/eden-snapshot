@@ -50,7 +50,7 @@ jobs:
           url: ${{ env.try-runtime-uri}}
           snap: eden-snapshot-full
       - name: Archive snap
-        uses: actions/upload-artifact@v4.3.3
+        uses: actions/upload-artifact@v4.3.6
         with:
             name: eden-snapshot-full
             path: eden-snapshot-full
