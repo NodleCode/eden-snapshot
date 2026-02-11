@@ -1,11 +1,12 @@
 name: Download try runtime snap
 
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '10 10 */3 * *'
+  workflow_dispatch:
+  # push:
+  #  branches:
+  #     - master
+  # schedule:
+  #   - cron: '10 10 */3 * *'
 
 env:
   try-runtime-uri: wss://nodle-parachain.api.onfinality.io:443/public-ws
